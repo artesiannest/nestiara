@@ -33,3 +33,9 @@ html[lang=th] .eyebrow,html[lang=zh-CN] .eyebrow{letter-spacing:.035em}
 #language-switcher .language-options button{display:grid;grid-template-columns:24px minmax(0,1fr) 18px;gap:12px;align-items:center;width:100%;min-height:48px;margin:0;padding:10px 12px;white-space:normal;text-align:left;font-family:inherit;font-size:14px;font-weight:500;line-height:1.4;letter-spacing:0;text-transform:none;box-shadow:none}
 #language-switcher .language-check{margin:0;text-align:center}
 @media(max-width:480px){#language-switcher summary{width:84px;padding:0 8px}.header .header-actions{gap:6px}}
+.language-content-status{position:absolute;right:0;top:calc(100% + 8px);width:245px;background:var(--bg,#0b1418);border:1px solid var(--line,#2c424c);border-radius:8px;padding:8px 10px;font-size:12px;line-height:1.5;color:var(--muted,#a5b6bb);box-shadow:var(--shadow);pointer-events:none}
+.language-switcher[open] .language-content-status{display:none}
+.admin-language{margin:10px 0 16px}
+.admin-language .language-options{background:#101c21!important}
+/* Keep language controls above navigation, with room for the dropdown. */
+aside #language-switcher.admin-language{order:0;flex-shrink:0;margin:8px 0 0;align-self:flex-start}
