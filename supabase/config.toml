@@ -1,0 +1,3 @@
+[functions.nest-translate]
+verify_jwt = false
+# The function validates the user JWT using Supabase Auth and checks nest_admins itself.
