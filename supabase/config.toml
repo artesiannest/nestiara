@@ -1,3 +1,7 @@
 [functions.nest-translate]
 verify_jwt = false
 # The function validates the user JWT using Supabase Auth and checks nest_admins itself.
+
+[functions.clarra-chat]
+verify_jwt = false
+# Public portfolio assistant. Uses public CMS only and server-side AI quotas.
