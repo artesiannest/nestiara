@@ -961,3 +961,176 @@ window.NEST_TRANSLATIONS = {
     "zh-CN": "Nestiara 卡通角色在跑步机上跑步"
   }
 };
+
+Object.assign(window.NEST_TRANSLATIONS,{
+  "Toko": {
+    "en": "Shop",
+    "th": "ร้านค้า",
+    "zh-CN": "商店"
+  },
+  "Toko Nestiara": {
+    "en": "Nestiara Shop",
+    "th": "ร้านค้า Nestiara",
+    "zh-CN": "Nestiara 商店"
+  },
+  "Keranjang": {
+    "en": "Cart",
+    "th": "ตะกร้า",
+    "zh-CN": "购物车"
+  },
+  "Cari produk atau jasa": {
+    "en": "Search products or services",
+    "th": "ค้นหาสินค้าหรือบริการ",
+    "zh-CN": "搜索产品或服务"
+  },
+  "Kategori": {
+    "en": "Category",
+    "th": "หมวดหมู่",
+    "zh-CN": "分类"
+  },
+  "Semua kategori": {
+    "en": "All categories",
+    "th": "ทุกหมวดหมู่",
+    "zh-CN": "所有分类"
+  },
+  "Urutkan": {
+    "en": "Sort by",
+    "th": "เรียงตาม",
+    "zh-CN": "排序"
+  },
+  "Pilihan toko": {
+    "en": "Shop selection",
+    "th": "สินค้าแนะนำ",
+    "zh-CN": "店铺精选"
+  },
+  "Harga terendah": {
+    "en": "Price: low to high",
+    "th": "ราคาต่ำไปสูง",
+    "zh-CN": "价格从低到高"
+  },
+  "Harga tertinggi": {
+    "en": "Price: high to low",
+    "th": "ราคาสูงไปต่ำ",
+    "zh-CN": "价格从高到低"
+  },
+  "Produk digital": {
+    "en": "Digital product",
+    "th": "สินค้าดิจิทัล",
+    "zh-CN": "数字产品"
+  },
+  "Jasa": {
+    "en": "Service",
+    "th": "บริการ",
+    "zh-CN": "服务"
+  },
+  "Detail": {
+    "en": "Details",
+    "th": "รายละเอียด",
+    "zh-CN": "详情"
+  },
+  "Tambah": {
+    "en": "Add",
+    "th": "เพิ่ม",
+    "zh-CN": "添加"
+  },
+  "Tambah ke keranjang": {
+    "en": "Add to cart",
+    "th": "เพิ่มลงตะกร้า",
+    "zh-CN": "加入购物车"
+  },
+  "Minta penawaran": {
+    "en": "Request a quote",
+    "th": "ขอใบเสนอราคา",
+    "zh-CN": "请求报价"
+  },
+  "Keranjang belanja": {
+    "en": "Shopping cart",
+    "th": "ตะกร้าสินค้า",
+    "zh-CN": "购物车"
+  },
+  "Estimasi total": {
+    "en": "Estimated total",
+    "th": "ยอดรวมโดยประมาณ",
+    "zh-CN": "预计总额"
+  },
+  "Informasi pemesan": {
+    "en": "Customer information",
+    "th": "ข้อมูลผู้สั่งซื้อ",
+    "zh-CN": "客户信息"
+  },
+  "Nama lengkap": {
+    "en": "Full name",
+    "th": "ชื่อและนามสกุล",
+    "zh-CN": "姓名"
+  },
+  "Email penerima produk / informasi layanan": {
+    "en": "Email for product delivery / service information",
+    "th": "อีเมลสำหรับรับสินค้าหรือข้อมูลบริการ",
+    "zh-CN": "产品交付或服务信息邮箱"
+  },
+  "Nomor WhatsApp": {
+    "en": "WhatsApp number",
+    "th": "หมายเลข WhatsApp",
+    "zh-CN": "WhatsApp 号码"
+  },
+  "Catatan kebutuhan": {
+    "en": "Requirements / notes",
+    "th": "ความต้องการและหมายเหตุ",
+    "zh-CN": "需求备注"
+  },
+  "Kirim pesanan": {
+    "en": "Submit order",
+    "th": "ส่งคำสั่งซื้อ",
+    "zh-CN": "提交订单"
+  },
+  "Lanjutkan ke WhatsApp": {
+    "en": "Continue to WhatsApp",
+    "th": "ดำเนินการต่อใน WhatsApp",
+    "zh-CN": "前往 WhatsApp"
+  },
+  "Informasi pemesanan": {
+    "en": "Ordering information",
+    "th": "ข้อมูลการสั่งซื้อ",
+    "zh-CN": "订购信息"
+  },
+  "Tampilkan lebih banyak": {
+    "en": "Show more",
+    "th": "แสดงเพิ่มเติม",
+    "zh-CN": "显示更多"
+  },
+  "Segera hadir.": {
+    "en": "Coming soon.",
+    "th": "เร็ว ๆ นี้",
+    "zh-CN": "即将推出。"
+  },
+  "Belum ada yang cocok.": {
+    "en": "No matching products.",
+    "th": "ไม่พบสินค้าที่ตรงกัน",
+    "zh-CN": "没有匹配的产品。"
+  },
+  "Toko sedang diperbarui.": {
+    "en": "The shop is being updated.",
+    "th": "ร้านค้ากำลังอัปเดต",
+    "zh-CN": "店铺正在更新。"
+  },
+  "Hapus": {
+    "en": "Remove",
+    "th": "ลบ",
+    "zh-CN": "移除"
+  },
+  "Pesanan berhasil dicatat": {
+    "en": "Order recorded",
+    "th": "บันทึกคำสั่งซื้อแล้ว",
+    "zh-CN": "订单已记录"
+  },
+  "Dibuat untuk kebutuhanmu.": {
+    "en": "Made for your needs.",
+    "th": "สร้างเพื่อความต้องการของคุณ",
+    "zh-CN": "为你的需求而设计。"
+  },
+  "Produk digital dan layanan untuk ide berikutnya.": {
+    "en": "Digital products and services for your next idea.",
+    "th": "สินค้าดิจิทัลและบริการสำหรับไอเดียถัดไปของคุณ",
+    "zh-CN": "为你的下一个创意提供数字产品和服务。"
+  }
+});

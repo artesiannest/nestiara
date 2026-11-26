@@ -28,6 +28,7 @@
     let output = dict[text] && dict[text][language];
     if (!output) {
       const counters = [
+        [/^(\d+) produk dan jasa$/, {en:'$1 products and services',th:'$1 สินค้าและบริการ','zh-CN':'$1 项产品和服务'}],
         [/^(\d+) sistem · (\d+) (screenshot|tampilan)$/, {en:'$1 systems · $2 screenshots',th:'$1 ระบบ · $2 ภาพหน้าจอ','zh-CN':'$1 个系统 · $2 张截图'}],
         [/^(\d+) sistem\.$/, {en:'$1 systems.',th:'$1 ระบบ','zh-CN':'$1 个系统。'}],
         [/^(\d+) sistem$/, {en:'$1 systems',th:'$1 ระบบ','zh-CN':'$1 个系统'}],

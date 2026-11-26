@@ -85,10 +85,10 @@
   updateCounts();
 
   // Jalankan tampilan setelah data selesai dimuat.
-  for (const path of ['js/main.js', 'js/room.js']) {
+  for (const path of ['js/main.js', 'js/shop.js', 'js/room.js']) {
     await new Promise(resolve => {
       const script = document.createElement('script');
-      script.src = path + '?v=nestiara-20261102';
+      script.src = path + '?v=shopfix-20261127-2';
       script.onload = resolve;
 
       script.onerror = () => {

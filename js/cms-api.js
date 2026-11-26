@@ -39,6 +39,9 @@
     async publish(content,revision) { return request('/rest/v1/rpc/nest_publish',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({new_content:content,expected_revision:revision})},await token()); },
     async history() { return request('/rest/v1/nest_versions?select=id,created_at,revision&order=revision.desc&limit=20',{},await token()); },
     async version(id) { const rows = await request('/rest/v1/nest_versions?id=eq.'+encodeURIComponent(id)+'&select=content',{},await token()); if(!rows.length) throw new Error('Versi tidak ditemukan.');return rows[0].content; },
+    async shopCreateOrder(payload) { return request('/rest/v1/rpc/nest_shop_place_order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({payload})}); },
+    async shopOrders() { return request('/rest/v1/nest_shop_orders?select=*&order=created_at.desc&limit=200',{},await token()); },
+    async shopUpdateOrder(id,status,note,previousUpdatedAt) { const rows=await request('/rest/v1/nest_shop_orders?id=eq.'+encodeURIComponent(id)+'&updated_at=eq.'+encodeURIComponent(previousUpdatedAt),{method:'PATCH',headers:{'Content-Type':'application/json',Prefer:'return=representation'},body:JSON.stringify({status,admin_note:note,updated_at:new Date().toISOString()})},await token()); if(!rows.length) throw new Error('Pesanan telah diperbarui oleh admin lain. Muat ulang daftar.'); return rows[0]; },
     async upload(file) {
       if(file.size>20*1024*1024) throw new Error('Ukuran maksimum 20 MB.');
       const ext=file.name.split('.').pop().toLowerCase();
