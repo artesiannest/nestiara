@@ -21,10 +21,21 @@
   add('contact','Kontak Nestiara',[p.email,p.phone,p.website],'#kontak');return docs;
  }
  function retrieve(question,docs){
-  const q=clean(question).toLowerCase();const tokens=words(q).filter(x=>x.length>2&&!['yang','dan','apa','saya','anda','the','are','does','can','you','her','she','ini','itu','untuk','bisa','dengan','tentang','nestiara'].includes(x));
+  const q=clean(question).toLowerCase().normalize('NFKC');
+  // Age/birth details are not part of the approved public knowledge schema.
+  // Never infer them from education dates or unrelated words such as stakeholder.
+  if(/\b(old|age|aged|birthday|birth|born|umur|usia|lahir)\b|อายุ|วันเกิด|几岁|多大|年龄|出生|生日/u.test(q))return [];
+  const stop=new Set(['yang','dan','apa','siapa','saya','anda','ini','itu','untuk','bisa','dengan','tentang','berapa','apakah','bagaimana','the','are','does','can','you','her','she','he','his','what','whats','how','who','whom','which','when','where','why','is','was','were','do','did','has','have','had','a','an','of','to','in','on','for','with','and','or','please','tell','me','about','use','uses','using','nestiara','nest','clarra']);
+  const tokens=[...new Set(words(q).filter(x=>x.length>2&&!stop.has(x)))];
   const kinds=new Set();for(const[k,aliases]of Object.entries(groups))if(aliases.some(x=>/^[a-z]+$/.test(x)?new RegExp('(?:^|[^a-z])'+x+'(?:$|[^a-z])').test(q):q.includes(x)))kinds.add(k);
   if(kinds.size>1)kinds.delete('profile');
-  return docs.map((d,i)=>{const title=words(d.title).join(' '),body=words(d.text).join(' ');let score=kinds.has(d.kind)?4:0;for(const t of tokens){if(title.includes(t))score+=5;else if(body.includes(t))score+=1;}if(q.includes(d.title.toLowerCase())&&d.title.length>3)score+=10;return{...d,score,i};}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||a.i-b.i).slice(0,3);
+  return docs.filter(d=>!kinds.size||kinds.has(d.kind)).map((d,i)=>{
+   const title=new Set(words(d.title)),body=new Set(words(d.text));let hits=0,titleHits=0,score=kinds.has(d.kind)?4:0;
+   for(const token of tokens){if(title.has(token)){hits++;titleHits++;score+=5;}else if(body.has(token)){hits++;score++;}}
+   // Without an explicit topic, require a title match or meaningful token coverage.
+   const relevant=kinds.size||titleHits||tokens.length&&hits/tokens.length>=0.6;
+   return{...d,score:relevant?score:0,i};
+  }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||a.i-b.i).slice(0,3);
  }
  root.ClarraKnowledge={build,retrieve};
 })(globalThis);
