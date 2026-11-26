@@ -12,10 +12,15 @@
     research: 'Riset Akademik',
     education: 'Pendidikan',
     skills: 'Keahlian',
-    certificates: 'Sertifikasi'
+    certificates: 'Sertifikasi',
+    products: 'Produk Toko',
+    store: 'Pengaturan Toko',
+    orders: 'Pesanan Toko'
   };
 
   const schemas = {
+    store: {enabled:'Toko aktif',name:'Nama toko',tagline:'Judul singkat toko',description:'Deskripsi toko',whatsapp:'WhatsApp toko (awalan 62)',email:'Email toko',paymentInfo:'Informasi pembayaran',terms:'Ketentuan pemesanan dan pengiriman'},
+    products: {id:'Kode produk unik',title:'Nama produk / jasa',type:'Jenis produk',category:'Kategori',summary:'Deskripsi singkat',description:'Deskripsi lengkap',cover:'Gambar produk (disarankan persegi)',price:'Harga (Rupiah, angka tanpa titik)',priceMode:'Jenis harga',status:'Status produk',delivery:'Estimasi pengiriman / pengerjaan',license:'Lisensi / ketentuan penggunaan',features:'Fitur / isi paket',demoUrl:'Tautan demo (opsional)'},
     profile: {
       name: 'Nama lengkap',
       nickname: 'Nama panggilan',
@@ -116,6 +121,7 @@
 
   function normalize(data) {
     if (!Array.isArray(data.games)) data.games = [];
+    window.NestShopModel.normalize(data);
     return data;
   }
 
@@ -201,12 +207,12 @@
     }
 
     for (const key of Object.keys(labels)) {
-      if (key !== 'profile' && !Array.isArray(data[key])) {
+      if (!['profile','store','orders'].includes(key) && !Array.isArray(data[key])) {
         throw new Error(`Data ${labels[key]} harus berupa daftar.`);
       }
     }
 
-    for (const key of ['systems', 'research', 'games']) {
+    for (const key of ['systems', 'research', 'games', 'products']) {
       const ids = new Set();
 
       for (const item of data[key]) {
@@ -227,6 +233,16 @@
       }
     }
 
+    for(const p of data.products){
+      if(!/^[a-zA-Z0-9_-]{1,80}$/.test(p.id))throw new Error('Kode produk maksimum 80 karakter.');
+      if(p.price==null||String(p.price).trim()===''||!Number.isSafeInteger(Number(p.price))||Number(p.price)<0||Number(p.price)>1000000000)throw new Error('Harga harus bilangan bulat 0 sampai 1.000.000.000.');
+      p.price=Number(p.price);
+      if(!['digital','service'].includes(p.type)||!['draft','active'].includes(p.status)||!['fixed','starting','quote'].includes(p.priceMode))throw new Error('Jenis, status, atau harga produk belum valid.');
+      if(p.status==='active'&&(!p.summary||!p.delivery))throw new Error('Produk aktif wajib memiliki deskripsi singkat dan informasi pengiriman / pengerjaan.');
+      if(p.priceMode==='quote'&&p.price!==0)throw new Error('Gunakan harga 0 untuk produk Minta penawaran.');
+    }
+    if(!String(data.store.name||'').trim())throw new Error('Nama toko wajib diisi.');
+    if(data.store.whatsapp&&!window.NestShopModel.phone(data.store.whatsapp))throw new Error('Nomor WhatsApp toko tidak valid.');
     function walk(obj) {
       for (const [key, value] of Object.entries(obj)) {
         if (
@@ -300,6 +316,14 @@
   function field(obj, key, label) {
     const wrap = el('label', label);
 
+    const choices={enabled:[['true','Aktif'],['false','Nonaktif']],type:[['digital','Produk digital'],['service','Jasa']],priceMode:[['fixed','Harga tetap'],['starting','Harga mulai'],['quote','Minta penawaran']],status:[['draft','Draft / disembunyikan'],['active','Aktif di toko']]};
+    if((section==='products'||section==='store')&&choices[key]){
+      const select=el('select');choices[key].forEach(([value,text])=>{const option=el('option',text);option.value=value;select.append(option);});
+      select.value=String(obj[key]??choices[key][0][0]);select.addEventListener('change',()=>{obj[key]=key==='enabled'?select.value==='true':select.value;changed();});wrap.append(select);return wrap;
+    }
+    if(key==='price'){
+      const input=el('input');input.type='number';input.min='0';input.max='1000000000';input.step='1';input.value=obj[key]??0;input.addEventListener('input',()=>{obj[key]=input.value;changed();});wrap.append(input);return wrap;
+    }
     if (key === 'accessStatus') {
       const select = el('select');
 
@@ -326,7 +350,7 @@
     const array = Array.isArray(obj[key]);
     const long = array || [
       'description', 'heroDescription', 'aboutDescription',
-      'summary', 'detail', 'focus', 'method', 'thesis'
+      'summary', 'detail', 'focus', 'method', 'thesis', 'terms', 'paymentInfo', 'features'
     ].includes(key);
 
     if (long) wrap.classList.add('wide');
@@ -480,6 +504,7 @@
     }
 
     if (key === 'skills') item.items = [];
+    if (key === 'products') Object.assign(item,{id:'product-'+crypto.randomUUID(),type:'digital',price:0,priceMode:'fixed',status:'draft'});
 
     if (key === 'games') {
       Object.assign(item, {
@@ -525,16 +550,23 @@
       ['Sistem', content.systems.length],
       ['Games', content.games.length],
       ['Riset', content.research.length],
-      ['Pengalaman', content.experience.length]
+      ['Pengalaman', content.experience.length],
+      ['Produk toko', content.products.filter(p=>p.status==='active').length]
     ]) {
       const stat = el('div', null, 'stat');
       stat.append(el('strong', String(value)), el('span', label));
       stats.append(stat);
     }
 
-    if (section === 'profile') {
+    if(section==='orders'){
+      window.NestShopOrders.render(editor);status();
+      document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.key===section)));
+      return;
+    }
+    if (section === 'profile'||section==='store') {
       const box = el('section', null, 'entry');
-      box.append(form(content.profile, schemas.profile));
+      box.append(form(content[section], schemas[section]));
+      if(section==='store')box.prepend(el('p','Pengaturan ini tampil publik. Jangan masukkan password, API key, atau tautan file berbayar. Pesanan dibuka melalui tab Pesanan Toko.'));
       editor.append(box);
     } else {
       content[section].forEach((item, i) => {
