@@ -709,6 +709,7 @@
     status();
     await history();
     notice(`Versi ${revision} berhasil diterbitkan. Muat ulang website.`);
+    window.NestTranslationAdmin?.afterPublish();
   }));
 
   $('#draft').addEventListener('click', () => {

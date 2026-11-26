@@ -5,3 +5,4 @@
 @media(max-width:600px){.shop-admin-filters{flex-direction:column}.shop-admin-order{padding:16px}.shop-admin-order .entry-head{align-items:start;flex-direction:column}}
 .shop-admin-order h3{overflow-wrap:anywhere;max-width:100%}
 aside{overflow-y:auto}.account{padding-top:20px}
+.translation-auto{display:flex;align-items:center;gap:10px;margin:18px 0}.translation-auto input{width:18px;height:18px;min-height:18px;margin:0}.translation-actions{display:flex;gap:12px;flex-wrap:wrap}.translation-panel p{font-size:14px;line-height:1.7}.translation-panel h2{margin-bottom:12px}

@@ -1,6 +1,7 @@
 (function(){
  'use strict';
  const labels={pending:'Baru',confirmed:'Dikonfirmasi',processing:'Diproses',completed:'Selesai',cancelled:'Dibatalkan'};
+ function keep(node){node.setAttribute('data-no-translate','');return node;}
  function el(tag,text,cls){const n=document.createElement(tag);if(text!=null)n.textContent=String(text);if(cls)n.className=cls;return n;}
  window.NestShopOrders={async render(editor){
  const panel=el('section',null,'entry shop-admin-orders');editor.append(panel);
@@ -15,10 +16,10 @@
  function renderList(){list.replaceChildren();const q=search.value.toLocaleLowerCase().trim();const matches=orders.filter(o=>(status.value==='all'||o.status===status.value)&&[o.order_code,o.customer_name,o.customer_email].join(' ').toLocaleLowerCase().includes(q));if(!matches.length)list.append(el('p','Tidak ada pesanan sesuai filter.'));
  matches.forEach(order=>{
  const box=el('article',null,'shop-admin-order');const head=el('div',null,'entry-head');head.append(el('h3',order.order_code),el('span',labels[order.status]||order.status,'shop-order-badge'));box.append(head);
- box.append(el('p',new Date(order.created_at).toLocaleString('id-ID')),el('strong',order.customer_name),el('p',order.customer_email+' · '+order.customer_phone));
+ box.append(el('p',new Date(order.created_at).toLocaleString('id-ID')),keep(el('strong',order.customer_name)),keep(el('p',order.customer_email+' · '+order.customer_phone)));
  const lines=el('ul');(order.items||[]).forEach(l=>lines.append(el('li',l.title+' × '+l.quantity+' · '+(l.priceMode==='quote'?'Penawaran':NestShopModel.money(l.price*l.quantity)))));box.append(lines,el('strong','Estimasi total: '+NestShopModel.money(order.total)));
  if(order.quote_required)box.append(el('p','Memerlukan konfirmasi penawaran atau harga mulai.'));
- if(order.notes)box.append(el('p','Catatan pelanggan: '+order.notes));
+ if(order.notes)box.append(keep(el('p','Catatan pelanggan: '+order.notes)));
  const fields=el('div',null,'fields'),stateLabel=el('label','Status pesanan'),select=el('select');Object.entries(labels).forEach(([k,v])=>{const o=el('option',v);o.value=k;select.append(o);});select.value=order.status;stateLabel.append(select);
  const noteLabel=el('label','Catatan internal admin'),note=el('textarea');note.maxLength=2000;note.value=order.admin_note||'';noteLabel.append(note);fields.append(stateLabel,noteLabel);box.append(fields);
  const actions=el('div',null,'shop-admin-actions'),save=el('button','Simpan status','primary');save.type='button';const notice=el('p');notice.setAttribute('role','status');
