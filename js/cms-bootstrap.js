@@ -88,7 +88,7 @@
   for (const path of ['js/main.js', 'js/shop.js', 'js/room.js']) {
     await new Promise(resolve => {
       const script = document.createElement('script');
-      script.src = path + '?v=shopfix-20261127-2';
+      script.src = path + '?v=auto-i18n-20261127-4';
       script.onload = resolve;
 
       script.onerror = () => {

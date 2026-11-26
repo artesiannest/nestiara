@@ -30,7 +30,7 @@
  box.append(button('Tambah ke keranjang',()=>{add(p);close(details);},'shop-btn primary'));open(details);
  }
  function render(){let list=products.filter(p=>enabled);const q=$('#shop-search').value.trim().toLocaleLowerCase();const cat=$('#shop-category').value;
- list=list.filter(p=>(!cat||p.category===cat)&&(!q||[p.title,p.summary,p.category].join(' ').toLocaleLowerCase().includes(q)));
+ list=list.filter(p=>(!cat||p.category===cat)&&(!q||[p.title,p.summary,p.category].map(value=>String(value||'')+' '+(window.NestLanguage?.translate(String(value||''))||'')).join(' ').toLocaleLowerCase().includes(q)));
  const sort=$('#shop-sort').value;if(sort==='low')list.sort((a,b)=>Number(a.price)-Number(b.price));if(sort==='high')list.sort((a,b)=>Number(b.price)-Number(a.price));
  $('#shop-results').textContent=list.length+' produk dan jasa';grid.replaceChildren();
  if(!list.length){const n=el('div',null,'shop-empty');n.append(el('h2',enabled?(products.length?'Belum ada yang cocok.':'Segera hadir.'): 'Toko sedang diperbarui.'),el('p',products.length?'Coba kata kunci atau kategori lain.':'Produk digital dan layanan akan hadir di sini. Hubungi Nestiara untuk mendiskusikan kebutuhanmu.'));grid.append(n);}

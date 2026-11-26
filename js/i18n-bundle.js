@@ -1,4 +1,3 @@
-// Language dictionary and runtime are shipped together to avoid version mismatch.
 // Add translations for new CMS text here.
 window.NEST_TRANSLATIONS = {
   "Kamar": {
@@ -1339,6 +1338,670 @@ Object.assign(window.NEST_TRANSLATIONS,{
   }
 });
 
+Object.assign(window.NEST_TRANSLATIONS,{
+  "Profil & Kontak": {
+    "en": "Profile & Contact",
+    "th": "โปรไฟล์และติดต่อ",
+    "zh-CN": "个人资料与联系"
+  },
+  "Pendidikan": {
+    "en": "Education",
+    "th": "การศึกษา",
+    "zh-CN": "教育"
+  },
+  "Keahlian": {
+    "en": "Skills",
+    "th": "ทักษะ",
+    "zh-CN": "技能"
+  },
+  "Sertifikasi": {
+    "en": "Certifications",
+    "th": "ใบรับรอง",
+    "zh-CN": "证书"
+  },
+  "Produk Toko": {
+    "en": "Shop Products",
+    "th": "สินค้าในร้าน",
+    "zh-CN": "店铺产品"
+  },
+  "Pengaturan Toko": {
+    "en": "Shop Settings",
+    "th": "ตั้งค่าร้านค้า",
+    "zh-CN": "店铺设置"
+  },
+  "Pesanan Toko": {
+    "en": "Shop Orders",
+    "th": "คำสั่งซื้อ",
+    "zh-CN": "店铺订单"
+  },
+  "Keluar": {
+    "en": "Sign out",
+    "th": "ออกจากระบบ",
+    "zh-CN": "退出登录"
+  },
+  "Simpan draft": {
+    "en": "Save draft",
+    "th": "บันทึกฉบับร่าง",
+    "zh-CN": "保存草稿"
+  },
+  "Buka draft": {
+    "en": "Open draft",
+    "th": "เปิดฉบับร่าง",
+    "zh-CN": "打开草稿"
+  },
+  "Muat konten terbaru": {
+    "en": "Reload content",
+    "th": "โหลดเนื้อหาใหม่",
+    "zh-CN": "重新加载内容"
+  },
+  "Terbitkan": {
+    "en": "Publish",
+    "th": "เผยแพร่",
+    "zh-CN": "发布"
+  },
+  "Riwayat publikasi": {
+    "en": "Publication history",
+    "th": "ประวัติการเผยแพร่",
+    "zh-CN": "发布历史"
+  },
+  "Pulihkan sebagai draft": {
+    "en": "Restore as draft",
+    "th": "กู้คืนเป็นฉบับร่าง",
+    "zh-CN": "恢复为草稿"
+  },
+  "Unduh backup JSON": {
+    "en": "Download JSON backup",
+    "th": "ดาวน์โหลดข้อมูลสำรอง JSON",
+    "zh-CN": "下载 JSON 备份"
+  },
+  "Belum ada publikasi": {
+    "en": "No publications yet",
+    "th": "ยังไม่มีการเผยแพร่",
+    "zh-CN": "尚无发布记录"
+  },
+  "Buka website ↗": {
+    "en": "Open website",
+    "th": "เปิดเว็บไซต์",
+    "zh-CN": "打开网站"
+  },
+  "Nama panggilan": {
+    "en": "Nickname",
+    "th": "ชื่อเล่น",
+    "zh-CN": "昵称"
+  },
+  "Nama lengkap": {
+    "en": "Full name",
+    "th": "ชื่อและนามสกุล",
+    "zh-CN": "姓名"
+  },
+  "Profesi": {
+    "en": "Professional title",
+    "th": "ตำแหน่งงาน",
+    "zh-CN": "职业头衔"
+  },
+  "Judul perkenalan": {
+    "en": "Introduction headline",
+    "th": "หัวข้อแนะนำตัว",
+    "zh-CN": "介绍标题"
+  },
+  "Deskripsi perkenalan": {
+    "en": "Introduction description",
+    "th": "รายละเอียดแนะนำตัว",
+    "zh-CN": "介绍描述"
+  },
+  "Tentang saya": {
+    "en": "About me",
+    "th": "เกี่ยวกับฉัน",
+    "zh-CN": "关于我"
+  },
+  "Email publik": {
+    "en": "Public email",
+    "th": "อีเมลสาธารณะ",
+    "zh-CN": "公开邮箱"
+  },
+  "Nomor telepon": {
+    "en": "Phone number",
+    "th": "หมายเลขโทรศัพท์",
+    "zh-CN": "电话号码"
+  },
+  "WhatsApp (angka saja, awalan 62)": {
+    "en": "WhatsApp (digits only, starting with 62)",
+    "th": "WhatsApp (เฉพาะตัวเลข เริ่มด้วย 62)",
+    "zh-CN": "WhatsApp（仅数字，以 62 开头）"
+  },
+  "Lokasi": {
+    "en": "Location",
+    "th": "ที่ตั้ง",
+    "zh-CN": "位置"
+  },
+  "Periode": {
+    "en": "Period",
+    "th": "ช่วงเวลา",
+    "zh-CN": "期间"
+  },
+  "Jabatan": {
+    "en": "Position",
+    "th": "ตำแหน่ง",
+    "zh-CN": "职位"
+  },
+  "Perusahaan / klien": {
+    "en": "Company / client",
+    "th": "บริษัท / ลูกค้า",
+    "zh-CN": "公司或客户"
+  },
+  "Tanggung jawab": {
+    "en": "Responsibilities",
+    "th": "หน้าที่รับผิดชอบ",
+    "zh-CN": "工作职责"
+  },
+  "Kode unik sistem": {
+    "en": "Unique system code",
+    "th": "รหัสระบบเฉพาะ",
+    "zh-CN": "唯一系统代码"
+  },
+  "Nama sistem": {
+    "en": "System name",
+    "th": "ชื่อระบบ",
+    "zh-CN": "系统名称"
+  },
+  "Deskripsi singkat": {
+    "en": "Short description",
+    "th": "คำอธิบายสั้น",
+    "zh-CN": "简短描述"
+  },
+  "Deskripsi lengkap": {
+    "en": "Full description",
+    "th": "รายละเอียดทั้งหมด",
+    "zh-CN": "完整描述"
+  },
+  "Gambar sampul sistem": {
+    "en": "System cover image",
+    "th": "ภาพปกระบบ",
+    "zh-CN": "系统封面图"
+  },
+  "Status akses sistem": {
+    "en": "System access status",
+    "th": "สถานะการเข้าถึงระบบ",
+    "zh-CN": "系统访问状态"
+  },
+  "Tautan Public Access": {
+    "en": "Public access link",
+    "th": "ลิงก์เข้าถึงสาธารณะ",
+    "zh-CN": "公开访问链接"
+  },
+  "Dokumentasi Google Docs": {
+    "en": "Google Docs documentation",
+    "th": "เอกสาร Google Docs",
+    "zh-CN": "Google Docs 文档"
+  },
+  "Kode unik game": {
+    "en": "Unique game code",
+    "th": "รหัสเกมเฉพาะ",
+    "zh-CN": "唯一游戏代码"
+  },
+  "Nama game": {
+    "en": "Game name",
+    "th": "ชื่อเกม",
+    "zh-CN": "游戏名称"
+  },
+  "Gambar sampul game": {
+    "en": "Game cover image",
+    "th": "ภาพปกเกม",
+    "zh-CN": "游戏封面图"
+  },
+  "Status akses game": {
+    "en": "Game access status",
+    "th": "สถานะการเข้าถึงเกม",
+    "zh-CN": "游戏访问状态"
+  },
+  "Tautan game": {
+    "en": "Game link",
+    "th": "ลิงก์เกม",
+    "zh-CN": "游戏链接"
+  },
+  "Kode unik riset": {
+    "en": "Unique research code",
+    "th": "รหัสงานวิจัยเฉพาะ",
+    "zh-CN": "唯一研究代码"
+  },
+  "Judul riset": {
+    "en": "Research title",
+    "th": "ชื่องานวิจัย",
+    "zh-CN": "研究标题"
+  },
+  "Topik": {
+    "en": "Topic",
+    "th": "หัวข้อ",
+    "zh-CN": "主题"
+  },
+  "Jenis penelitian": {
+    "en": "Research type",
+    "th": "ประเภทการวิจัย",
+    "zh-CN": "研究类型"
+  },
+  "Penulis (satu per baris)": {
+    "en": "Authors (one per line)",
+    "th": "ผู้เขียน (หนึ่งคนต่อบรรทัด)",
+    "zh-CN": "作者（每行一位）"
+  },
+  "Fokus": {
+    "en": "Focus",
+    "th": "ประเด็นหลัก",
+    "zh-CN": "重点"
+  },
+  "Metode": {
+    "en": "Method",
+    "th": "วิธีการ",
+    "zh-CN": "方法"
+  },
+  "Ringkasan lengkap": {
+    "en": "Full summary",
+    "th": "สรุปฉบับเต็ม",
+    "zh-CN": "完整摘要"
+  },
+  "Dokumen riset": {
+    "en": "Research document",
+    "th": "เอกสารงานวิจัย",
+    "zh-CN": "研究文档"
+  },
+  "Status": {
+    "en": "Status",
+    "th": "สถานะ",
+    "zh-CN": "状态"
+  },
+  "Jenjang / program": {
+    "en": "Level / program",
+    "th": "ระดับ / หลักสูตร",
+    "zh-CN": "学位或专业"
+  },
+  "Institusi": {
+    "en": "Institution",
+    "th": "สถาบัน",
+    "zh-CN": "院校"
+  },
+  "IPK": {
+    "en": "GPA",
+    "th": "เกรดเฉลี่ย",
+    "zh-CN": "平均绩点"
+  },
+  "Tugas akhir": {
+    "en": "Thesis",
+    "th": "วิทยานิพนธ์",
+    "zh-CN": "毕业论文"
+  },
+  "Kelompok keahlian": {
+    "en": "Skill group",
+    "th": "กลุ่มทักษะ",
+    "zh-CN": "技能分组"
+  },
+  "Daftar keahlian (satu per baris)": {
+    "en": "Skills (one per line)",
+    "th": "รายการทักษะ (หนึ่งทักษะต่อบรรทัด)",
+    "zh-CN": "技能列表（每行一项）"
+  },
+  "Nama sertifikasi": {
+    "en": "Certification name",
+    "th": "ชื่อใบรับรอง",
+    "zh-CN": "证书名称"
+  },
+  "Penerbit": {
+    "en": "Issuer",
+    "th": "ผู้ออกใบรับรอง",
+    "zh-CN": "颁发机构"
+  },
+  "Tanggal": {
+    "en": "Date",
+    "th": "วันที่",
+    "zh-CN": "日期"
+  },
+  "Unggah": {
+    "en": "Upload",
+    "th": "อัปโหลด",
+    "zh-CN": "上传"
+  },
+  "Kode produk unik": {
+    "en": "Unique product code",
+    "th": "รหัสสินค้าเฉพาะ",
+    "zh-CN": "唯一产品代码"
+  },
+  "Nama produk / jasa": {
+    "en": "Product / service name",
+    "th": "ชื่อสินค้า / บริการ",
+    "zh-CN": "产品或服务名称"
+  },
+  "Jenis produk": {
+    "en": "Product type",
+    "th": "ประเภทสินค้า",
+    "zh-CN": "产品类型"
+  },
+  "Gambar produk (disarankan persegi)": {
+    "en": "Product image (square recommended)",
+    "th": "รูปสินค้า (แนะนำรูปสี่เหลี่ยมจัตุรัส)",
+    "zh-CN": "产品图片（建议正方形）"
+  },
+  "Harga (Rupiah, angka tanpa titik)": {
+    "en": "Price (Rupiah, digits without separators)",
+    "th": "ราคา (รูเปียห์ ตัวเลขไม่คั่นหลัก)",
+    "zh-CN": "价格（印尼盾，无分隔符数字）"
+  },
+  "Jenis harga": {
+    "en": "Pricing type",
+    "th": "ประเภทราคา",
+    "zh-CN": "价格类型"
+  },
+  "Harga tetap": {
+    "en": "Fixed price",
+    "th": "ราคาคงที่",
+    "zh-CN": "固定价格"
+  },
+  "Harga mulai": {
+    "en": "Starting price",
+    "th": "ราคาเริ่มต้น",
+    "zh-CN": "起步价"
+  },
+  "Status produk": {
+    "en": "Product status",
+    "th": "สถานะสินค้า",
+    "zh-CN": "产品状态"
+  },
+  "Draft / disembunyikan": {
+    "en": "Draft / hidden",
+    "th": "ฉบับร่าง / ซ่อน",
+    "zh-CN": "草稿或隐藏"
+  },
+  "Aktif di toko": {
+    "en": "Active in shop",
+    "th": "แสดงในร้านค้า",
+    "zh-CN": "在店铺显示"
+  },
+  "Estimasi pengiriman / pengerjaan": {
+    "en": "Estimated delivery / turnaround",
+    "th": "ระยะเวลาจัดส่ง / ดำเนินงาน",
+    "zh-CN": "预计交付时间或工期"
+  },
+  "Lisensi / ketentuan penggunaan": {
+    "en": "License / usage terms",
+    "th": "สิทธิ์ / เงื่อนไขการใช้งาน",
+    "zh-CN": "许可或使用条款"
+  },
+  "Fitur / isi paket": {
+    "en": "Features / package contents",
+    "th": "คุณสมบัติ / รายการในแพ็กเกจ",
+    "zh-CN": "功能或套餐内容"
+  },
+  "Tautan demo (opsional)": {
+    "en": "Demo link (optional)",
+    "th": "ลิงก์ตัวอย่าง (ไม่บังคับ)",
+    "zh-CN": "演示链接（可选）"
+  },
+  "Toko aktif": {
+    "en": "Shop enabled",
+    "th": "เปิดใช้งานร้าน",
+    "zh-CN": "启用店铺"
+  },
+  "Aktif": {
+    "en": "Enabled",
+    "th": "เปิดใช้งาน",
+    "zh-CN": "已启用"
+  },
+  "Nonaktif": {
+    "en": "Disabled",
+    "th": "ปิดใช้งาน",
+    "zh-CN": "已停用"
+  },
+  "Nama toko": {
+    "en": "Shop name",
+    "th": "ชื่อร้าน",
+    "zh-CN": "店铺名称"
+  },
+  "Judul singkat toko": {
+    "en": "Shop headline",
+    "th": "หัวข้อร้านค้า",
+    "zh-CN": "店铺标题"
+  },
+  "Deskripsi toko": {
+    "en": "Shop description",
+    "th": "คำอธิบายร้าน",
+    "zh-CN": "店铺描述"
+  },
+  "WhatsApp toko (awalan 62)": {
+    "en": "Shop WhatsApp (starting with 62)",
+    "th": "WhatsApp ร้านค้า (เริ่มด้วย 62)",
+    "zh-CN": "店铺 WhatsApp（以 62 开头）"
+  },
+  "Email toko": {
+    "en": "Shop email",
+    "th": "อีเมลร้านค้า",
+    "zh-CN": "店铺邮箱"
+  },
+  "Informasi pembayaran": {
+    "en": "Payment information",
+    "th": "ข้อมูลการชำระเงิน",
+    "zh-CN": "付款信息"
+  },
+  "Ketentuan pemesanan dan pengiriman": {
+    "en": "Order and delivery terms",
+    "th": "เงื่อนไขการสั่งซื้อและจัดส่ง",
+    "zh-CN": "订购与交付条款"
+  },
+  "Pesanan pelanggan": {
+    "en": "Customer orders",
+    "th": "คำสั่งซื้อของลูกค้า",
+    "zh-CN": "客户订单"
+  },
+  "Muat ulang": {
+    "en": "Reload",
+    "th": "โหลดใหม่",
+    "zh-CN": "重新加载"
+  },
+  "Cari pesanan": {
+    "en": "Search orders",
+    "th": "ค้นหาคำสั่งซื้อ",
+    "zh-CN": "搜索订单"
+  },
+  "Semua status": {
+    "en": "All statuses",
+    "th": "ทุกสถานะ",
+    "zh-CN": "所有状态"
+  },
+  "Baru": {
+    "en": "New",
+    "th": "ใหม่",
+    "zh-CN": "新订单"
+  },
+  "Dikonfirmasi": {
+    "en": "Confirmed",
+    "th": "ยืนยันแล้ว",
+    "zh-CN": "已确认"
+  },
+  "Diproses": {
+    "en": "Processing",
+    "th": "กำลังดำเนินการ",
+    "zh-CN": "处理中"
+  },
+  "Selesai": {
+    "en": "Completed",
+    "th": "เสร็จสิ้น",
+    "zh-CN": "已完成"
+  },
+  "Dibatalkan": {
+    "en": "Cancelled",
+    "th": "ยกเลิกแล้ว",
+    "zh-CN": "已取消"
+  },
+  "Status pesanan": {
+    "en": "Order status",
+    "th": "สถานะคำสั่งซื้อ",
+    "zh-CN": "订单状态"
+  },
+  "Catatan internal admin": {
+    "en": "Internal admin note",
+    "th": "บันทึกภายในของผู้ดูแล",
+    "zh-CN": "管理员内部备注"
+  },
+  "Simpan status": {
+    "en": "Save status",
+    "th": "บันทึกสถานะ",
+    "zh-CN": "保存状态"
+  },
+  "Hubungi pelanggan": {
+    "en": "Contact customer",
+    "th": "ติดต่อลูกค้า",
+    "zh-CN": "联系客户"
+  },
+  "Bahasa konten": {
+    "en": "Content languages",
+    "th": "ภาษาเนื้อหา",
+    "zh-CN": "内容语言"
+  },
+  "Buat / lanjutkan terjemahan": {
+    "en": "Generate / resume translations",
+    "th": "สร้าง / ดำเนินการแปลต่อ",
+    "zh-CN": "生成或继续翻译"
+  },
+  "Hentikan setelah batch ini": {
+    "en": "Stop after this batch",
+    "th": "หยุดหลังชุดนี้",
+    "zh-CN": "在本批次后停止"
+  },
+  "Otomatis terjemahkan konten setelah Terbitkan": {
+    "en": "Automatically translate content after publishing",
+    "th": "แปลเนื้อหาอัตโนมัติหลังเผยแพร่",
+    "zh-CN": "发布后自动翻译内容"
+  },
+  "Konten baru diterjemahkan setelah konfigurasi layanan diaktifkan.": {
+    "en": "New content is translated after the translation service is configured.",
+    "th": "เนื้อหาใหม่จะแปลหลังตั้งค่าบริการแปลแล้ว",
+    "zh-CN": "配置翻译服务后即可翻译新内容。"
+  },
+  "Terjemahkan deskripsi dan konten publik yang sudah diterbitkan ke English, Thailand, dan China. Hasil tersimpan dan digunakan pengunjung sesuai pilihan bahasa.": {
+    "en": "Translate published descriptions and public content into English, Thai and Chinese. Saved translations are displayed according to each visitor’s language choice.",
+    "th": "แปลคำอธิบายและเนื้อหาสาธารณะที่เผยแพร่แล้วเป็นภาษาอังกฤษ ไทย และจีน ผลแปลที่บันทึกจะแสดงตามภาษาที่ผู้เข้าชมเลือก",
+    "zh-CN": "将已发布的描述和公开内容翻译为英语、泰语和中文。访客将看到所选语言的已保存译文。"
+  }
+});
+
+Object.assign(window.NEST_TRANSLATIONS,{
+  "Pesanan belum dianggap dibayar. Admin akan mengonfirmasi detail dan pembayaran.": {
+    "en": "The order is not marked as paid. The administrator will confirm the details and payment.",
+    "th": "คำสั่งซื้อนี้ยังไม่ถือว่าชำระเงินแล้ว ผู้ดูแลจะยืนยันรายละเอียดและการชำระเงิน",
+    "zh-CN": "订单尚未标记为已付款。管理员将确认详情及付款。"
+  },
+  "Menyimpan pesanan…": {
+    "en": "Saving your order…",
+    "th": "กำลังบันทึกคำสั่งซื้อ…",
+    "zh-CN": "正在保存订单…"
+  },
+  "Status berhasil diperbarui.": {
+    "en": "Status updated successfully.",
+    "th": "อัปเดตสถานะแล้ว",
+    "zh-CN": "状态已更新。"
+  },
+  "Tidak ada pesanan sesuai filter.": {
+    "en": "No orders match this filter.",
+    "th": "ไม่พบคำสั่งซื้อตามตัวกรอง",
+    "zh-CN": "没有符合筛选条件的订单。"
+  },
+  "Belum ada pesanan.": {
+    "en": "No orders yet.",
+    "th": "ยังไม่มีคำสั่งซื้อ",
+    "zh-CN": "尚无订单。"
+  },
+  "Memuat pesanan…": {
+    "en": "Loading orders…",
+    "th": "กำลังโหลดคำสั่งซื้อ…",
+    "zh-CN": "正在加载订单…"
+  },
+  "Masuk ke admin": {
+    "en": "Sign in to admin",
+    "th": "เข้าสู่ระบบผู้ดูแล",
+    "zh-CN": "登录管理后台"
+  },
+  "Email admin": {
+    "en": "Admin email",
+    "th": "อีเมลผู้ดูแล",
+    "zh-CN": "管理员邮箱"
+  },
+  "Kembali ke website": {
+    "en": "Back to website",
+    "th": "กลับไปเว็บไซต์",
+    "zh-CN": "返回网站"
+  },
+  "Kelola cerita, karya, riset, produk, dan pesanan dari satu tempat.": {
+    "en": "Manage stories, work, research, products and orders in one place.",
+    "th": "จัดการเรื่องราว ผลงาน งานวิจัย สินค้า และคำสั่งซื้อในที่เดียว",
+    "zh-CN": "在同一处管理介绍、作品、研究、产品及订单。"
+  },
+  "Ruang kendali": {
+    "en": "Control room",
+    "th": "ศูนย์ควบคุม",
+    "zh-CN": "控制中心"
+  },
+  "karya Nest.": {
+    "en": "for Nest’s work.",
+    "th": "ผลงานของ Nest",
+    "zh-CN": "Nest 的作品。"
+  },
+  "Pengaturan ini tampil publik. Jangan masukkan password, API key, atau tautan file berbayar. Pesanan dibuka melalui tab Pesanan Toko.": {
+    "en": "These settings are public. Do not enter passwords, API keys or paid-file links. Manage orders in Shop Orders.",
+    "th": "การตั้งค่านี้แสดงต่อสาธารณะ ห้ามใส่รหัสผ่าน API key หรือลิงก์ไฟล์ที่ขาย จัดการคำสั่งซื้อในเมนูคำสั่งซื้อ",
+    "zh-CN": "这些设置会公开显示。请勿填写密码、API 密钥或付费文件链接。请在店铺订单中管理订单。"
+  },
+  "Pesanan menyimpan harga saat pemesanan. Status diperbarui langsung tanpa tombol Terbitkan. Pembayaran dan pengiriman dikonfirmasi secara manual.": {
+    "en": "Orders retain the price at the time of ordering. Status changes are saved directly without publishing. Payment and delivery are confirmed manually.",
+    "th": "คำสั่งซื้อบันทึกราคา ณ เวลาสั่ง สถานะบันทึกได้โดยตรงโดยไม่ต้องเผยแพร่ การชำระเงินและการจัดส่งยืนยันด้วยตนเอง",
+    "zh-CN": "订单保留订购时的价格。状态更改直接保存，无需发布。付款与交付由人工确认。"
+  }
+});
+
+Object.assign(window.NEST_TRANSLATIONS, {
+  "Sistem": {
+    "en": "Systems",
+    "th": "ระบบ",
+    "zh-CN": "系统"
+  },
+  "Produk toko": {
+    "en": "Shop products",
+    "th": "สินค้าในร้าน",
+    "zh-CN": "商店商品"
+  },
+  "Bagian konten": {
+    "en": "Content sections",
+    "th": "ส่วนเนื้อหา",
+    "zh-CN": "内容栏目"
+  },
+  "Pilih versi sebelumnya": {
+    "en": "Choose a previous version",
+    "th": "เลือกเวอร์ชันก่อนหน้า",
+    "zh-CN": "选择历史版本"
+  },
+  "Pemulihan membuka versi lama sebagai draft. Terbitkan untuk menampilkannya kembali.": {
+    "en": "Restoring opens a previous version as a draft. Publish it to display it again.",
+    "th": "การกู้คืนจะเปิดเวอร์ชันก่อนหน้าเป็นฉบับร่าง เผยแพร่เพื่อแสดงอีกครั้ง",
+    "zh-CN": "恢复将把历史版本打开为草稿，发布后即可再次显示。"
+  },
+  "Konten sesuai publikasi terakhir": {
+    "en": "Content matches the latest publication",
+    "th": "เนื้อหาตรงกับการเผยแพร่ล่าสุด",
+    "zh-CN": "内容与最新发布一致"
+  },
+  "Proses dihentikan. Hasil yang sudah selesai tetap tersimpan. Klik lanjutkan untuk menyelesaikan.": {
+    "en": "Process stopped. Completed translations are saved. Resume to finish.",
+    "th": "หยุดการทำงานแล้ว คำแปลที่เสร็จแล้วถูกบันทึกไว้ กดดำเนินการต่อเพื่อให้เสร็จ",
+    "zh-CN": "处理已停止，已完成的翻译已保存。请继续以完成剩余内容。"
+  },
+  "Proses berhenti agar tidak berulang. Klik lanjutkan untuk mencoba kembali.": {
+    "en": "Processing stopped to prevent a loop. Resume to try again.",
+    "th": "หยุดการทำงานเพื่อป้องกันการวนซ้ำ กดดำเนินการต่อเพื่อลองอีกครั้ง",
+    "zh-CN": "为防止循环，处理已停止。请继续重试。"
+  },
+  "Koneksi terlalu lama. Klik lanjutkan kembali.": {
+    "en": "Connection timed out. Resume to try again.",
+    "th": "การเชื่อมต่อหมดเวลา กดดำเนินการต่อเพื่อลองอีกครั้ง",
+    "zh-CN": "连接超时，请继续重试。"
+  }
+});
+
 (function () {
   'use strict';
   const languages = {
@@ -1394,7 +2057,10 @@ Object.assign(window.NEST_TRANSLATIONS,{
         [/^(\d+) game$/, {en:'$1 games',th:'$1 เกม','zh-CN':'$1 个游戏'}],
         [/^(\d+) (?:dari|\/) (\d+) sistem$/, {en:'$1 of $2 systems',th:'$1 จาก $2 ระบบ','zh-CN':'$1 / $2 个系统'}],
         [/^IPK (.*)$/, {en:'GPA $1',th:'เกรดเฉลี่ย $1','zh-CN':'平均绩点 $1'}],
-        [/^Tugas akhir: (.*)$/, {en:'Thesis: $1',th:'วิทยานิพนธ์: $1','zh-CN':'毕业论文：$1'}]
+        [/^Versi (\d+) · Konten sesuai publikasi terakhir$/, {en:'Version $1 · Content matches the latest publication',th:'เวอร์ชัน $1 · เนื้อหาตรงกับการเผยแพร่ล่าสุด','zh-CN':'版本 $1 · 内容与最新发布一致'}],
+        [/^Memproses (.+)\. Terjemahan yang sudah tersimpan tidak dibuat ulang…$/, {en:'Processing $1. Saved translations are reused…',th:'กำลังประมวลผล $1 โดยใช้คำแปลที่บันทึกไว้…','zh-CN':'正在处理 $1，已有翻译将被重复使用…'}],
+        [/^(.+): (\d+) dari (\d+) teks siap\.$/, {en:'$1: $2 of $3 texts ready.',th:'$1: ข้อความพร้อมแล้ว $2 จาก $3','zh-CN':'$1：$3 段文本中已有 $2 段完成。'}],
+        [/^Terjemahan seluruh konten publik selesai\. (\d+) teks baru diproses\. Muat ulang website untuk melihat hasilnya\.$/, {en:'Public content translation is complete. $1 new texts processed. Reload the website to see the results.',th:'แปลเนื้อหาสาธารณะเสร็จแล้ว ประมวลผลข้อความใหม่ $1 รายการ โหลดเว็บไซต์ใหม่เพื่อดูผลลัพธ์','zh-CN':'公开内容翻译完成，已处理 $1 段新文本。请刷新网站查看结果。'}]
       ];
       for (const [pattern, values] of counters) if (pattern.test(text)) { output = text.replace(pattern,values[language]); break; }
       if (!output) {
@@ -1405,6 +2071,21 @@ Object.assign(window.NEST_TRANSLATIONS,{
         const base = text.split(/ [—|] /)[0];
         const name = base.startsWith('Kamar') ? ({en:'Room',th:'ห้องทำงาน','zh-CN':'工作室'})[language] : (dict[base]?.[language] || base);
         output = name + ' | Nestiara';
+      }
+    }
+    if(!output){
+      const prefixed=text.match(/^(Jenis|Pengiriman \/ pengerjaan|Lisensi \/ ketentuan|Termasuk|Tugas akhir):\s*(.*)$/);
+      if(prefixed){const labels={en:{Jenis:'Type','Pengiriman / pengerjaan':'Delivery / turnaround','Lisensi / ketentuan':'License / terms',Termasuk:'Includes','Tugas akhir':'Thesis'},th:{Jenis:'ประเภท','Pengiriman / pengerjaan':'การจัดส่ง / ระยะเวลาดำเนินงาน','Lisensi / ketentuan':'สิทธิ์การใช้งาน / เงื่อนไข',Termasuk:'รวม','Tugas akhir':'วิทยานิพนธ์'},'zh-CN':{Jenis:'类型','Pengiriman / pengerjaan':'交付或工期','Lisensi / ketentuan':'许可或条款',Termasuk:'包含','Tugas akhir':'毕业论文'}};output=labels[language][prefixed[1]]+': '+translate(prefixed[2]);}
+    }
+    if(!output){
+      const labels={en:{'Kode pesanan':'Order code','Estimasi':'Estimate','Estimasi total':'Estimated total','Catatan pelanggan':'Customer note'},th:{'Kode pesanan':'รหัสคำสั่งซื้อ','Estimasi':'ประมาณการ','Estimasi total':'ยอดรวมโดยประมาณ','Catatan pelanggan':'หมายเหตุของลูกค้า'},'zh-CN':{'Kode pesanan':'订单编号','Estimasi':'估算','Estimasi total':'预计总额','Catatan pelanggan':'客户备注'}};
+      const prefix=text.match(/^(Kode pesanan|Estimasi total|Estimasi):\s*(.*)$/);
+      if(prefix)output=labels[language][prefix[1]]+': '+prefix[2];
+      const numbered=text.match(/^(\d+\.)\s+(.+)$/);if(!output&&numbered)output=numbered[1]+' '+translate(numbered[2]);
+      const add=text.match(/^\+ Tambah (.+)$/);if(!output&&add)output='+ '+translate('Tambah')+' '+translate(add[1]);
+      if(!output&&source.includes('\n')){
+        const lines=source.split('\n');const result=lines.map(line=>line.trim()?translate(line):line).join('\n');
+        if(result!==source)return result;
       }
     }
     if (!output) return source;
@@ -1465,7 +2146,7 @@ Object.assign(window.NEST_TRANSLATIONS,{
     const host=document.getElementById('language-switcher');
     if (!host) return;
     host.innerHTML='<summary id="language-current" aria-label="Choose language / Pilih bahasa"></summary><div class="language-options" role="group" aria-label="Language / Bahasa">'+Object.entries(languages).map(([key,item])=>'<button type="button" data-language="'+key+'" lang="'+key+'">'+flag(item.flag)+'<span>'+item.label+'</span><span class="language-check" aria-hidden="true">✓</span></button>').join('')+'</div>';
-    host.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>{setLanguage(button.dataset.language);host.open=false;host.querySelector('summary').focus();}));
+    host.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>{setLanguage(button.getAttribute('data-language'));host.open=false;host.querySelector('summary').focus();}));
     document.addEventListener('click',event=>{if(!host.contains(event.target))host.open=false;});
     document.addEventListener('keydown',event=>{if(event.key==='Escape'&&host.open){host.open=false;host.querySelector('summary').focus();}});
     const summary=host.querySelector('summary');
@@ -1487,6 +2168,16 @@ Object.assign(window.NEST_TRANSLATIONS,{
   window.addEventListener('pageshow',()=>apply());
   window.addEventListener('storage',event=>{if(event.key===key&&languages[event.newValue])setLanguage(event.newValue);});
   document.addEventListener('nest:content-ready',()=>apply());
-  window.NestLanguage={setLanguage,translate,getLanguage:()=>language,refresh:apply};
+  function register(entries,target){
+    if(!['en','th','zh-CN'].includes(target)||!entries||typeof entries!=='object')return;
+    const dict=window.NEST_TRANSLATIONS||(window.NEST_TRANSLATIONS={});
+    for(const [source,text] of Object.entries(entries)){
+      if(typeof text!=='string'||!text.trim()||['__proto__','constructor','prototype'].includes(source))continue;
+      const key=normalize(source);const prior=Object.hasOwn(dict,key)?dict[key]:{};
+      Object.defineProperty(dict,key,{value:Object.assign({},prior,{[target]:text}),writable:true,enumerable:true,configurable:true});
+    }
+    reverseDictionarySource=null;apply();
+  }
+  window.NestLanguage={setLanguage,translate,getLanguage:()=>language,refresh:apply,register};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();

@@ -445,6 +445,7 @@
     const filtered = systems.filter(item =>
       (!category || item.category === category) &&
       [item.title, item.category, item.summary]
+        .map(value => String(value || '') + ' ' + (window.NestLanguage?.translate(String(value || '')) || ''))
         .join(' ')
         .toLocaleLowerCase('id')
         .includes(query)
@@ -572,6 +573,7 @@
     const filtered = games.filter(item =>
       (!category || item.category === category) &&
       [item.title, item.category, item.summary]
+        .map(value => String(value || '') + ' ' + (window.NestLanguage?.translate(String(value || '')) || ''))
         .join(' ')
         .toLocaleLowerCase('id')
         .includes(query)
