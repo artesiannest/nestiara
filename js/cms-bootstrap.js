@@ -101,4 +101,5 @@
   }
 
   updateCounts();
+  document.dispatchEvent(new CustomEvent('nest:content-ready'));
 })();

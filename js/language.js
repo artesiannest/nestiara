@@ -21,13 +21,30 @@
     };
     return '<svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false">' + shapes[country] + '</svg>';
   }
+  let reverseDictionary=null,reverseDictionarySource=null,reverseDictionarySize=0;
+  function canonical(source){
+    const dictionary=window.NEST_TRANSLATIONS||{};
+    const size=Object.keys(dictionary).length;
+    if(reverseDictionarySource!==dictionary||reverseDictionarySize!==size){
+      reverseDictionary=new Map();reverseDictionarySource=dictionary;reverseDictionarySize=size;
+      for(const [original,translations] of Object.entries(dictionary)){
+        reverseDictionary.set(normalize(original),original);
+        for(const value of Object.values(translations||{}))if(typeof value==='string'&&!reverseDictionary.has(normalize(value)))reverseDictionary.set(normalize(value),original);
+      }
+    }
+    const original=reverseDictionary.get(normalize(source));
+    return original?source.match(/^\s*/)[0]+original+source.match(/\s*$/)[0]:source;
+  }
   function translate(source) {
+    source=canonical(String(source??''));
     if (language === 'id') return source;
     const text = normalize(source);
     const dict = window.NEST_TRANSLATIONS || {};
     let output = dict[text] && dict[text][language];
     if (!output) {
       const counters = [
+        [/^(\d+) dari (\d+) game$/, {en:'$1 of $2 games',th:'$1 จาก $2 เกม','zh-CN':'$1 / $2 个游戏'}],
+        [/^Mulai (Rp.*)$/, {en:'From $1',th:'เริ่มต้น $1','zh-CN':'起价 $1'}],
         [/^(\d+) produk dan jasa$/, {en:'$1 products and services',th:'$1 สินค้าและบริการ','zh-CN':'$1 项产品和服务'}],
         [/^(\d+) sistem · (\d+) (screenshot|tampilan)$/, {en:'$1 systems · $2 screenshots',th:'$1 ระบบ · $2 ภาพหน้าจอ','zh-CN':'$1 个系统 · $2 张截图'}],
         [/^(\d+) sistem\.$/, {en:'$1 systems.',th:'$1 ระบบ','zh-CN':'$1 个系统。'}],
@@ -43,7 +60,7 @@
         const numbered = text.match(/^(.*?) (\d+)$/);
         if (numbered && dict[numbered[1]]?.[language]) output = dict[numbered[1]][language] + ' ' + numbered[2];
       }
-      if (!output && /^(?:Kamar Nest|Kamar Nestiara|Tentang & Pengalaman|Portfolio Sistem|Riset Akademik|Kontak|Games) [—|] Nestiara(?: Lidya Kakihary)?$/.test(text)) {
+      if (!output && /^(?:Kamar Nest|Kamar Nestiara|Tentang & Pengalaman|Portfolio Sistem|Riset Akademik|Kontak|Games|Toko Nestiara) [—|] Nestiara(?: Lidya Kakihary)?$/.test(text)) {
         const base = text.split(/ [—|] /)[0];
         const name = base.startsWith('Kamar') ? ({en:'Room',th:'ห้องทำงาน','zh-CN':'工作室'})[language] : (dict[base]?.[language] || base);
         output = name + ' | Nestiara';
@@ -101,6 +118,7 @@
       button.classList.toggle('selected',active);
     });
     apply();
+    document.dispatchEvent(new CustomEvent('nest:languagechange',{detail:{language}}));
   }
   function init() {
     const host=document.getElementById('language-switcher');
@@ -124,6 +142,10 @@
     window.addEventListener('scroll',position,{passive:true});
     setLanguage(language);
   }
+  window.addEventListener('hashchange',()=>{clearTimeout(apply.routeTimer);apply.routeTimer=setTimeout(apply,0);});
+  window.addEventListener('pageshow',()=>apply());
+  window.addEventListener('storage',event=>{if(event.key===key&&languages[event.newValue])setLanguage(event.newValue);});
+  document.addEventListener('nest:content-ready',()=>apply());
   window.NestLanguage={setLanguage,translate,getLanguage:()=>language,refresh:apply};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();

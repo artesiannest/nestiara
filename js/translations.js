@@ -1134,3 +1134,206 @@ Object.assign(window.NEST_TRANSLATIONS,{
     "zh-CN": "为你的下一个创意提供数字产品和服务。"
   }
 });
+
+Object.assign(window.NEST_TRANSLATIONS,{
+  "Belajar": {
+    "en": "Learning",
+    "th": "การเรียนรู้",
+    "zh-CN": "学习"
+  },
+  "berkembang": {
+    "en": "growing",
+    "th": "การเติบโต",
+    "zh-CN": "成长"
+  },
+  "pengalaman": {
+    "en": "experience",
+    "th": "ประสบการณ์",
+    "zh-CN": "经验"
+  },
+  "04 / RISET": {
+    "en": "04 / RESEARCH",
+    "th": "04 / งานวิจัย",
+    "zh-CN": "04 / 研究"
+  },
+  "KARYA AKADEMIK": {
+    "en": "ACADEMIC WORK",
+    "th": "ผลงานวิชาการ",
+    "zh-CN": "学术成果"
+  },
+  "Detail produk": {
+    "en": "Product details",
+    "th": "รายละเอียดสินค้า",
+    "zh-CN": "产品详情"
+  },
+  "Jelajahi produk digital atau diskusikan layanan yang kamu perlukan. Setiap pesanan dikonfirmasi sebelum pembayaran.": {
+    "en": "Explore digital products or discuss the service you need. Every order is confirmed before payment.",
+    "th": "เลือกดูสินค้าดิจิทัลหรือพูดคุยเกี่ยวกับบริการที่คุณต้องการ ทุกคำสั่งซื้อจะได้รับการยืนยันก่อนชำระเงิน",
+    "zh-CN": "浏览数字产品或沟通你需要的服务。每笔订单均在付款前确认。"
+  },
+  "Saya menyetujui ketentuan pemesanan. Nama, email, nomor WhatsApp, dan catatan saya digunakan untuk memproses pesanan. Produk digital dikirim setelah konfirmasi pembayaran.": {
+    "en": "I agree to the ordering terms. My name, email, WhatsApp number and notes are used to process this order. Digital products are delivered after payment confirmation.",
+    "th": "ฉันยอมรับเงื่อนไขการสั่งซื้อ ชื่อ อีเมล หมายเลข WhatsApp และหมายเหตุของฉันจะใช้เพื่อดำเนินการตามคำสั่งซื้อ สินค้าดิจิทัลจะจัดส่งหลังยืนยันการชำระเงิน",
+    "zh-CN": "我同意订购条款。我的姓名、邮箱、WhatsApp 号码及备注用于处理订单。数字产品将在确认付款后交付。"
+  },
+  "Informasi pembayaran diberikan setelah pesanan dikonfirmasi.": {
+    "en": "Payment information is provided after the order is confirmed.",
+    "th": "ข้อมูลการชำระเงินจะแจ้งหลังยืนยันคำสั่งซื้อ",
+    "zh-CN": "付款信息将在订单确认后提供。"
+  },
+  "Belum termasuk penyesuaian layanan yang disepakati.": {
+    "en": "Excludes agreed service adjustments.",
+    "th": "ยังไม่รวมการปรับบริการที่ตกลงเพิ่มเติม",
+    "zh-CN": "不包括另行商定的服务调整。"
+  },
+  "Total di atas merupakan estimasi. Nilai penawaran atau harga mulai dikonfirmasi oleh admin.": {
+    "en": "The total above is an estimate. Quotes and starting prices are confirmed by the administrator.",
+    "th": "ยอดรวมข้างต้นเป็นการประมาณการ ราคาเสนอหรือราคาเริ่มต้นจะได้รับการยืนยันจากผู้ดูแล",
+    "zh-CN": "以上总额为估算。报价或起步价由管理员确认。"
+  },
+  "Keranjangmu masih kosong. Pilih produk atau jasa terlebih dahulu.": {
+    "en": "Your cart is empty. Choose a product or service first.",
+    "th": "ตะกร้าของคุณยังว่าง เลือกสินค้าหรือบริการก่อน",
+    "zh-CN": "购物车为空，请先选择产品或服务。"
+  },
+  "Ditambahkan ke keranjang.": {
+    "en": "Added to cart.",
+    "th": "เพิ่มลงตะกร้าแล้ว",
+    "zh-CN": "已加入购物车。"
+  },
+  "Coba kata kunci atau kategori lain.": {
+    "en": "Try another keyword or category.",
+    "th": "ลองใช้คำค้นหรือหมวดหมู่อื่น",
+    "zh-CN": "请尝试其他关键词或分类。"
+  },
+  "Produk digital dan layanan akan hadir di sini. Hubungi Nestiara untuk mendiskusikan kebutuhanmu.": {
+    "en": "Digital products and services will be available here. Contact Nestiara to discuss your needs.",
+    "th": "สินค้าดิจิทัลและบริการจะมีให้เลือกที่นี่ ติดต่อ Nestiara เพื่อพูดคุยเกี่ยวกับความต้องการของคุณ",
+    "zh-CN": "数字产品和服务即将在此上线。请联系 Nestiara 沟通你的需求。"
+  },
+  "Temukan produk digital dan jasa yang sesuai kebutuhanmu. Diskusikan detail pekerjaan sebelum pesanan dikonfirmasi.": {
+    "en": "Find digital products and services that fit your needs. Discuss the scope before confirming an order.",
+    "th": "ค้นหาสินค้าดิจิทัลและบริการที่เหมาะกับคุณ พูดคุยรายละเอียดงานก่อนยืนยันคำสั่งซื้อ",
+    "zh-CN": "寻找符合需求的数字产品和服务。请在确认订单前沟通工作细节。"
+  },
+  "Harga jasa mengikuti ruang lingkup yang disepakati. Produk digital dikirim secara manual setelah pembayaran dikonfirmasi.": {
+    "en": "Service prices depend on the agreed scope. Digital products are delivered manually after payment is confirmed.",
+    "th": "ราคาบริการขึ้นอยู่กับขอบเขตงานที่ตกลง สินค้าดิจิทัลจะจัดส่งโดยผู้ดูแลหลังยืนยันการชำระเงิน",
+    "zh-CN": "服务价格取决于商定的工作范围。数字产品在确认付款后由人工交付。"
+  },
+  "Nama, kategori, atau kebutuhanmu": {
+    "en": "Name, category, or your requirements",
+    "th": "ชื่อ หมวดหมู่ หรือความต้องการของคุณ",
+    "zh-CN": "名称、分类或你的需求"
+  },
+  "Ceritakan kebutuhan atau pertanyaanmu. Jangan masukkan password atau data rahasia.": {
+    "en": "Describe your needs or questions. Do not include passwords or confidential data.",
+    "th": "อธิบายความต้องการหรือคำถามของคุณ ไม่ต้องระบุรหัสผ่านหรือข้อมูลลับ",
+    "zh-CN": "请描述你的需求或问题。请勿填写密码或机密信息。"
+  },
+  "Freelance Web Programmer": {
+    "en": "Freelance Web Programmer",
+    "th": "นักพัฒนาเว็บอิสระ",
+    "zh-CN": "自由职业网页开发者"
+  },
+  "IT Project Manager & Web Programmer": {
+    "en": "IT Project Manager & Web Programmer",
+    "th": "ผู้จัดการโครงการไอทีและนักพัฒนาเว็บ",
+    "zh-CN": "IT 项目经理及网页开发者"
+  },
+  "Junior Programmer": {
+    "en": "Junior Programmer",
+    "th": "โปรแกรมเมอร์ระดับต้น",
+    "zh-CN": "初级程序员"
+  },
+  "Information System Intern": {
+    "en": "Information Systems Intern",
+    "th": "นักศึกษาฝึกงานด้านระบบสารสนเทศ",
+    "zh-CN": "信息系统实习生"
+  },
+  "Mengelola studio pengembangan web serta melakukan pengembangan web maupun aplikasi berbasis web. Menangani komunikasi klien, perencanaan proyek, koordinasi tim, pengelolaan scope, serta pengawasan kualitas desain dan delivery. Melakukan pengembangan web maupun aplikasi berbasis web yang inovatif, kreatif, dan keren kayak saya": {
+    "en": "Managing a web development studio and building websites and web applications. Handling client communication, project planning, team coordination, scope management, design quality and delivery. Creating innovative, creative web experiences with my own personality.",
+    "th": "บริหารสตูดิโอพัฒนาเว็บและพัฒนาเว็บไซต์กับเว็บแอปพลิเคชัน ดูแลการสื่อสารกับลูกค้า การวางแผนโครงการ การประสานงานทีม ขอบเขตงาน คุณภาพการออกแบบ และการส่งมอบ สร้างประสบการณ์เว็บที่มีนวัตกรรม ความคิดสร้างสรรค์ และเอกลักษณ์ของฉัน",
+    "zh-CN": "管理网页开发工作室，开发网站及网页应用。负责客户沟通、项目规划、团队协调、范围管理、设计质量和交付，打造兼具创新、创意与个人特色的网页体验。"
+  },
+  "Machine learning untuk deteksi intrusi dan lightweight cryptography pada smart home IoT.": {
+    "en": "Machine learning for intrusion detection and lightweight cryptography in smart-home IoT.",
+    "th": "การเรียนรู้ของเครื่องสำหรับการตรวจจับการบุกรุกและการเข้ารหัสลับแบบเบาใน IoT บ้านอัจฉริยะ",
+    "zh-CN": "智能家居物联网中的机器学习入侵检测与轻量级密码技术。"
+  },
+  "Systematic literature review terhadap artikel periode 2019–2024; perbandingan konseptual ML-based IDS dan lightweight cryptography.": {
+    "en": "Systematic literature review of articles published in 2019–2024; conceptual comparison of ML-based IDS and lightweight cryptography.",
+    "th": "การทบทวนวรรณกรรมอย่างเป็นระบบจากบทความปี 2019–2024 และการเปรียบเทียบเชิงแนวคิดระหว่าง ML-based IDS กับการเข้ารหัสลับแบบเบา",
+    "zh-CN": "系统性回顾 2019–2024 年的文献，对基于机器学习的入侵检测与轻量级密码技术进行概念比较。"
+  },
+  "Kajian literatur mengenai peran ML-based IDS dan lightweight cryptography dalam strategi keamanan berlapis pada arsitektur edge–cloud hybrid untuk smart home IoT.": {
+    "en": "A literature review of ML-based IDS and lightweight cryptography in layered security strategies for hybrid edge–cloud architectures in smart-home IoT.",
+    "th": "การทบทวนวรรณกรรมเกี่ยวกับบทบาทของ ML-based IDS และการเข้ารหัสลับแบบเบาในกลยุทธ์ความปลอดภัยหลายชั้นของสถาปัตยกรรม edge–cloud แบบไฮบริดสำหรับ IoT บ้านอัจฉริยะ",
+    "zh-CN": "回顾基于机器学习的入侵检测与轻量级密码技术在智能家居物联网混合边缘云架构分层安全策略中的作用。"
+  },
+  "Kajian menunjukkan bahwa ML-based IDS mendeteksi serangan jaringan, sedangkan kriptografi ringan melindungi kerahasiaan dan integritas data. Kedua mekanisme direkomendasikan sebagai strategi keamanan berlapis dalam arsitektur edge–cloud hybrid. Temuan berasal dari sintesis literatur, bukan pengujian implementasi sistem baru.": {
+    "en": "The review indicates that ML-based IDS detects network attacks, while lightweight cryptography protects data confidentiality and integrity. Both mechanisms are recommended as layered security for hybrid edge–cloud architectures. The findings come from literature synthesis, rather than testing a newly implemented system.",
+    "th": "การทบทวนพบว่า ML-based IDS ตรวจจับการโจมตีเครือข่าย ส่วนการเข้ารหัสลับแบบเบาปกป้องความลับและความถูกต้องของข้อมูล จึงแนะนำให้ใช้ทั้งสองกลไกเป็นความปลอดภัยหลายชั้นในสถาปัตยกรรม edge–cloud แบบไฮบริด ผลมาจากการสังเคราะห์วรรณกรรม ไม่ใช่การทดสอบระบบใหม่",
+    "zh-CN": "综述表明，基于机器学习的入侵检测可识别网络攻击，轻量级密码技术可保护数据的机密性与完整性。建议在混合边缘云架构中将两者用于分层安全。结论来自文献综合，而非新系统的实施测试。"
+  },
+  "Evaluasi kualitas sistem klinik pada IsawaBeauty Clinic Tangerang.": {
+    "en": "Evaluation of clinic-system quality at IsawaBeauty Clinic, Tangerang.",
+    "th": "การประเมินคุณภาพระบบคลินิกที่ IsawaBeauty Clinic เมือง Tangerang",
+    "zh-CN": "对 Tangerang 的 IsawaBeauty Clinic 诊所系统质量进行评估。"
+  },
+  "Kuesioner Likert kepada lima pengguna yang dipilih melalui purposive sampling; analisis Quality Index berbobot.": {
+    "en": "A Likert questionnaire with five purposively selected users; weighted Quality Index analysis.",
+    "th": "แบบสอบถามมาตราส่วน Likert จากผู้ใช้ห้าคนที่เลือกแบบเจาะจง และการวิเคราะห์ดัชนีคุณภาพแบบถ่วงน้ำหนัก",
+    "zh-CN": "对目的性抽样选出的五名用户进行李克特量表问卷调查，并分析加权质量指数。"
+  },
+  "Evaluasi kualitas MyKlinik.id menggunakan kerangka ISO/IEC 25000 (SQuaRE), dengan perhatian pada kualitas fungsi, pengalaman pengguna, keandalan, keamanan, dan kebutuhan perbaikan sistem.": {
+    "en": "Evaluation of MyKlinik.id using ISO/IEC 25000 (SQuaRE), focusing on functionality, user experience, reliability, security and opportunities for system improvement.",
+    "th": "การประเมิน MyKlinik.id ด้วยกรอบ ISO/IEC 25000 (SQuaRE) โดยเน้นการทำงาน ประสบการณ์ผู้ใช้ ความน่าเชื่อถือ ความปลอดภัย และความต้องการปรับปรุงระบบ",
+    "zh-CN": "使用 ISO/IEC 25000（SQuaRE）框架评估 MyKlinik.id，重点关注功能、用户体验、可靠性、安全性及系统改进需求。"
+  },
+  "Penelitian melibatkan dua staf administrasi, satu perawat, dan dua dokter estetika. Indeks kualitas berbobot dalam naskah sebesar 3,79 dari 5,00, dengan kategori Baik. Kesesuaian fungsi, kompatibilitas, dan usability menjadi kekuatan sistem. Rekomendasi mencakup keamanan data, efisiensi kinerja, dokumentasi teknis, validasi data, dan pelatihan pengguna. Hasil menggambarkan penilaian lima pengguna di klinik yang diteliti.": {
+    "en": "The study involved two administrative staff, one nurse and two aesthetic doctors. The manuscript reports a weighted quality index of 3.79 out of 5.00, rated Good. Functional suitability, compatibility and usability were strengths. Recommendations cover data security, performance efficiency, technical documentation, data validation and user training. The results reflect the assessments of five users at the clinic studied.",
+    "th": "การศึกษามีเจ้าหน้าที่ธุรการสองคน พยาบาลหนึ่งคน และแพทย์ด้านความงามสองคน ดัชนีคุณภาพถ่วงน้ำหนักในต้นฉบับเท่ากับ 3.79 จาก 5.00 อยู่ในระดับดี จุดแข็งคือความเหมาะสมของฟังก์ชัน ความเข้ากันได้ และการใช้งาน ข้อเสนอแนะครอบคลุมความปลอดภัยข้อมูล ประสิทธิภาพ เอกสารเทคนิค การตรวจสอบข้อมูล และการฝึกอบรม ผลสะท้อนการประเมินจากผู้ใช้ห้าคนในคลินิกที่ศึกษา",
+    "zh-CN": "研究涉及两名行政人员、一名护士及两名美容医生。文稿报告加权质量指数为 3.79/5.00，等级为良好。系统优势包括功能适合性、兼容性及易用性。建议改进数据安全、性能效率、技术文档、数据验证和用户培训。结果反映了该诊所五名用户的评价。"
+  },
+  "Konsep, teknologi pendukung, dan implikasi metaverse bagi bisnis dan teknologi Indonesia.": {
+    "en": "Metaverse concepts, enabling technologies and implications for business and technology in Indonesia.",
+    "th": "แนวคิด เทคโนโลยีสนับสนุน และผลกระทบของเมตาเวิร์สต่อธุรกิจและเทคโนโลยีในอินโดนีเซีย",
+    "zh-CN": "元宇宙概念、支撑技术及其对印度尼西亚商业与技术的影响。"
+  },
+  "Systematic literature review dengan sintesis terhadap 14 artikel jurnal.": {
+    "en": "Systematic literature review synthesizing 14 journal articles.",
+    "th": "การทบทวนวรรณกรรมอย่างเป็นระบบโดยสังเคราะห์บทความวารสาร 14 เรื่อง",
+    "zh-CN": "对 14 篇期刊文章进行系统性文献回顾与综合。"
+  },
+  "Sintesis literatur mengenai metaverse, teknologi pendukungnya, peluang bisnis, dan tantangan adopsi dalam konteks Indonesia.": {
+    "en": "Literature synthesis on the metaverse, enabling technologies, business opportunities and adoption challenges in Indonesia.",
+    "th": "การสังเคราะห์วรรณกรรมเกี่ยวกับเมตาเวิร์ส เทคโนโลยีสนับสนุน โอกาสทางธุรกิจ และความท้าทายในการนำมาใช้ในอินโดนีเซีย",
+    "zh-CN": "综合有关元宇宙、支撑技术、商业机会及其在印度尼西亚的应用挑战的文献。"
+  },
+  "Kajian membahas teknologi pendukung metaverse, termasuk VR/AR, AI, blockchain, IoT, dan komputasi terdistribusi. Peluang mencakup layanan imersif, pemasaran, dan model bisnis digital. Tantangan mencakup kesiapan infrastruktur, literasi pengguna, regulasi, privasi, dan keamanan data. Rekomendasi menekankan literasi, penguatan infrastruktur, dan kolaborasi pemerintah, akademisi, serta industri.": {
+    "en": "The review discusses enabling technologies including VR/AR, AI, blockchain, IoT and distributed computing. Opportunities include immersive services, marketing and digital business models. Challenges include infrastructure readiness, user literacy, regulation, privacy and data security. Recommendations emphasize literacy, stronger infrastructure and collaboration among government, academia and industry.",
+    "th": "บททบทวนกล่าวถึงเทคโนโลยีสนับสนุน เช่น VR/AR, AI, blockchain, IoT และการประมวลผลแบบกระจาย โอกาสรวมถึงบริการเสมือนจริง การตลาด และโมเดลธุรกิจดิจิทัล ความท้าทายคือโครงสร้างพื้นฐาน ทักษะผู้ใช้ กฎระเบียบ ความเป็นส่วนตัว และความปลอดภัยข้อมูล ข้อเสนอแนะเน้นความรู้ โครงสร้างพื้นฐาน และความร่วมมือของรัฐ สถาบันการศึกษา และอุตสาหกรรม",
+    "zh-CN": "综述讨论 VR/AR、AI、区块链、物联网及分布式计算等支撑技术。机会涵盖沉浸式服务、营销及数字商业模式。挑战包括基础设施准备、用户素养、监管、隐私及数据安全。建议提升素养、加强基础设施，并推动政府、学术界及产业合作。"
+  },
+  "Kelayakan teknis, ekonomi, hukum, operasional, dan jadwal.": {
+    "en": "Technical, economic, legal, operational and scheduling feasibility.",
+    "th": "ความเป็นไปได้ด้านเทคนิค เศรษฐกิจ กฎหมาย การดำเนินงาน และกำหนดเวลา",
+    "zh-CN": "技术、经济、法律、运营及进度可行性。"
+  },
+  "Studi kasus kualitatif deskriptif; observasi, wawancara, dan telaah dokumen.": {
+    "en": "A descriptive qualitative case study using observation, interviews and document review.",
+    "th": "กรณีศึกษาเชิงคุณภาพแบบพรรณนาโดยใช้การสังเกต การสัมภาษณ์ และการทบทวนเอกสาร",
+    "zh-CN": "采用观察、访谈及文档审查的描述性定性案例研究。"
+  },
+  "Kajian kelayakan adopsi HRIS untuk memodernisasi pengelolaan SDM di Akar Rasa Food and Space. Pendekatan TELOS digunakan untuk menilai kesiapan organisasi dan kebutuhan implementasi.": {
+    "en": "A feasibility study of HRIS adoption to modernize human-resource management at Akar Rasa Food and Space. TELOS is used to assess organizational readiness and implementation needs.",
+    "th": "การศึกษาความเป็นไปได้ของการนำ HRIS มาใช้ปรับปรุงการบริหารทรัพยากรบุคคลที่ Akar Rasa Food and Space โดยใช้ TELOS ประเมินความพร้อมขององค์กรและความต้องการในการดำเนินงาน",
+    "zh-CN": "研究 Akar Rasa Food and Space 采用 HRIS 以实现人力资源管理现代化的可行性。使用 TELOS 评估组织准备程度及实施需求。"
+  },
+  "Hasil dalam naskah menunjukkan HRIS sangat layak dari aspek ekonomi, operasional, dan jadwal. Aspek teknis dan hukum dinilai layak dengan catatan terkait keamanan data biometrik dan pelindungan data pribadi. Kajian menjadi dasar pertimbangan adopsi HRIS untuk memodernisasi pengelolaan SDM di Akar Rasa Food and Space.": {
+    "en": "The manuscript finds HRIS highly feasible economically, operationally and in terms of scheduling. Technical and legal feasibility is conditional on biometric-data security and personal-data protection. The study informs consideration of HRIS adoption to modernize human-resource management at Akar Rasa Food and Space.",
+    "th": "ผลในต้นฉบับระบุว่า HRIS มีความเป็นไปได้สูงด้านเศรษฐกิจ การดำเนินงาน และกำหนดเวลา ด้านเทคนิคและกฎหมายมีความเป็นไปได้โดยมีข้อควรพิจารณาเกี่ยวกับความปลอดภัยข้อมูลชีวมิติและการคุ้มครองข้อมูลส่วนบุคคล การศึกษาสนับสนุนการพิจารณานำ HRIS มาใช้ที่ Akar Rasa Food and Space",
+    "zh-CN": "文稿认为 HRIS 在经济、运营及进度方面具有很高可行性。技术与法律方面可行，但须注意生物识别数据安全及个人信息保护。研究为 Akar Rasa Food and Space 采用 HRIS 推进人力资源管理现代化提供参考。"
+  }
+});
